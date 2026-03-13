@@ -37,10 +37,10 @@
     <div class="flex pt-14">
         <aside class="w-64 bg-white h-screen border-r border-gray-200 fixed overflow-y-auto">
             <nav class="mt-6 px-4 space-y-2">
-                <a href="#" class="flex items-center space-x-3 p-3 bg-green-50 text-green-700 rounded-lg font-semibold">
+                <a href="{{ route('petugas') }}" class="flex items-center space-x-3 p-3 bg-green-50 text-green-700 rounded-lg font-semibold">
                     <span>🏠</span> <span>Dashboard</span>
                 </a>
-                <a href="#" class="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-100 rounded-lg transition">
+                <a href="{{ route('input-sampah') }}" class="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-100 rounded-lg transition">
                     <span>♻️</span> <span>Input Sampah</span>
                 </a>
                 <a href="#" class="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-100 rounded-lg transition">

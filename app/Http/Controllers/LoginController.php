@@ -21,4 +21,8 @@ class LoginController extends Controller
     function petugas() {
         return view('pages.petugas.dashboard');
     }
+
+    function input_sampah() {
+        return view('pages.petugas.input-sampah');
+    }
 }
