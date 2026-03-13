@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WargaController;
 use App\Http\Controllers\JenisSampahController;
@@ -24,3 +25,8 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 // Route::resource('jenis-sampahs', JenisSampahController::class);
 // Route::resource('petugas', PetugasController::class);
 // Route::resource('users', UserController::class);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+
+Route::get('/register', [LoginController::class, 'register'])->name('register');
+
+Route::get('/dashboard-admin',[LoginController::class,'admin'])->name('admin');
