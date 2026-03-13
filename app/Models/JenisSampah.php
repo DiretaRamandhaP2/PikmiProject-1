@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class JenisSampah extends Model
 {
-    //
+    protected $fillable = ['nama', 'harga_per_sampah'];
+    
 }
