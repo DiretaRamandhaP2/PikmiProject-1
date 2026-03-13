@@ -15,6 +15,6 @@ class LoginController extends Controller
     }
 
     function admin() {
-        return view('layout.admin');
+        return view('pages.admin.dashboard');
     }
 }
