@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Petugas extends Model
 {
-    //
+    protected $fillable = ['nama', 'user_id', 'no_hp'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
