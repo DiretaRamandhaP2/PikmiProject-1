@@ -19,7 +19,7 @@
             <p class="text-gray-500 text-sm">Silakan login untuk mengelola limbah</p>
         </div>
 
-        <form action="{{ route('login') }}" method="POST">
+        <form action="{{ route('login.submit') }}" method="POST">
             @csrf
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-semibold mb-2">Username / Email</label>
