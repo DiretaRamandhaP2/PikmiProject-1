@@ -14,3 +14,5 @@ Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::get('/dashboard-admin',[LoginController::class,'admin'])->name('admin');
 
 Route::get('/dashboard-petugas',[LoginController::class,'petugas'])->name('petugas');
+
+Route::get('/input-sampah',[LoginController::class,'input_sampah'])->name('input-sampah');
